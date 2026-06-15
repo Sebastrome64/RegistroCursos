@@ -41,5 +41,29 @@ public class Curso {
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
+    @Override
+    public String toString() {
+        return "Curso{" +
+                "idCurso='" + idCurso + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", horario='" + horario + '\'' +
+                ", profesor='" + profesor + '\'' +
+                ", aula='" + aula + '\'' +
+                ", cupos=" + cupos +
+                ", tipo=" + obtenerNombreTipo() +
+                '}';
+    }
+
+    private String obtenerNombreTipo() {
+        if(tipo == 1) {
+            return "Teoria";
+        } else if(tipo == 2) {
+            return "Laboratorio";
+        } else if(tipo == 3) {
+            return "Practica";
+        } else {
+            return "No definido";
+        }
+    }
 
 }
