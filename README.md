@@ -1,0 +1,4 @@
+Este proyecto implementa un sistema básico de registro de cursos para una universidad, usando el patrón de diseño **Iterator**. Los cursos tienen datos como ID o NRC, nombre, horario, profesor, aula, cupos y tipo de curso, que puede ser teoría, laboratorio o práctica.
+La colección de cursos se maneja internamente mediante **nodos enlazados**, donde cada nodo guarda un curso y apunta al siguiente. Para recorrer esta colección sin acceder directamente a su estructura interna, se usa un iterador.
+Mi implementación realiza el recorrido por **nombre de curso en orden alfabético**. Elegí este algoritmo porque los alumnos suelen identificar más fácilmente un curso por su nombre que por su código. Además, este recorrido se diferencia del de mi compañero, que será por ID de curso.
+En resumen, el patrón Iterator permite separar la forma en que se almacenan los cursos de la forma en que se recorren, haciendo el código más ordenado y fácil de mantener.
